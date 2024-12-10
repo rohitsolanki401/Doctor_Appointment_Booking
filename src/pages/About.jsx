@@ -26,7 +26,7 @@ const About = () => {
       <p className='text-gray-600 font-semibold'>WHY CHOOSE US</p>
       </div>
     
-       <div className='flex flex-col md:flex-row mb-20 justify-center mx-40'>
+       <div className='flex flex-col md:flex-row mb-20 justify-center mx-41'>
         <div className='border px-10 md:px-16 py-8 sm:py-16 flex flex-col gap-5 text-[15px] hover:bg-primary transition-all duration-300 text-gray-600 cursor-pointer'>
          <b>EFFICIENCY:</b>
          <p>Streamlined appointment scheduling that fits into your busy lifestyle.</p>
