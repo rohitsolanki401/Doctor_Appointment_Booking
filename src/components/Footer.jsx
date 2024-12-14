@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  
 import { assets } from '../assets/assets';
 
 const Footer = () => {
   return (
     <div className="bg-white py-10 mt-20 px-12">
-      
       {/* Main Footer Container */}
       <div className="flex flex-col md:grid grid-cols-[2fr_1fr_1fr] gap-14 mx-auto md:mx-10 text-sm">
         
@@ -27,14 +27,16 @@ const Footer = () => {
           <p className="text-xl font-medium mb-5">COMPANY</p>
           <ul className="flex flex-col gap-2 text-gray-600">
             <li>
-              <a href="#home" className="hover:text-black">
+              <Link to="/" className="hover:text-black"
+              onClick={() => window.scrollTo({top:0 , behavior:'smooth'})}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about" className="hover:text-black">
+              <Link to="/about" className="hover:text-black"
+              onClick={() => window.scrollTo({top:0 , behavior:'smooth'})}>
                 About us
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#delivery" className="hover:text-black">
@@ -53,8 +55,12 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>+0-000-000-000</li>
-            <li>healthcare@gmail.com</li>
+            <li>
+              <a href='tel:+0-000-000-000' className='hover:text-black'>+0-000-000-000</a>
+              </li>
+            <li>
+              <a href='mailto:wellnessway@gmail.com' className='hover:text-black'>wellnessway@gmail.com</a>
+              </li>
           </ul>
         </div>
       </div>

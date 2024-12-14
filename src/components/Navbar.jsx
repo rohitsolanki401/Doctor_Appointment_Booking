@@ -9,6 +9,11 @@ const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
+  // State to track the active navbar item
+  const [activeItem, setActiveItem] = useState('');
+
+  const navItems = ['Home', 'Doctors', 'About', 'Contact'];
+
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -49,6 +54,7 @@ const Navbar = () => {
           <li className="py-1">CONTACT</li>
         </NavLink>
       </ul>
+      
 
       {/* User Profile and Hamburger Menu */}
       <div className="flex items-center gap-4">
