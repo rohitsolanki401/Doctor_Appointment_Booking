@@ -22,9 +22,10 @@ const About = () => {
       </div>
 
       {/* --------------------- WHY CHOOSE US ----------------------- */}
-      <div className='text-xl my-4 ml-40'>
-      <p className='text-gray-600 font-semibold'>WHY CHOOSE US</p>
+      <div className='text-center text-2xl text-gray-600 mb-5'>
+        <p className=' text-gray-600 pt-10 font-medium'>WHY CHOOSE US</p>
       </div>
+      
     
        <div className='flex flex-col md:flex-row mb-20 justify-center mx-4 sm:mx-40'>
         <div className='border px-25 md:px-10 py-5 sm:py-10 flex flex-col gap-5 text-[15px] hover:bg-primary transition-all duration-300 text-gray-600 cursor-pointer'>
