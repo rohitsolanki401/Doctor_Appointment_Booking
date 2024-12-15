@@ -51,7 +51,7 @@ const applyFilter = () => {
 
       <div className="flex flex-col sm:flex-row items-start gap-5 mt-5">
         
-        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary text-white' : ''}`}  onClick={()=> setShowFilter(prev => !prev)}>Filters</button>
+        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary' : ''}`}  onClick={()=> setShowFilter(prev => !prev)}>Filters</button>
         
 
         {/* ------------ Specialities List --------------- */}

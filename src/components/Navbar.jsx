@@ -40,21 +40,21 @@ const Navbar = () => {
       />
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex items-start gap-5 font-medium">
+      <ul className="hidden md:flex items-start gap-10 font-medium">
         <NavLink to="/">
-          <li className="py-1">HOME</li>
+          <li className="py-1 hover:underline hover:text-red-600">HOME</li>
         </NavLink>
         <NavLink to="/doctors">
-          <li className="py-1">DOCTORS</li>
+          <li className="py-1 hover:underline hover:text-red-600">DOCTORS</li>
         </NavLink>
         <NavLink to="/about">
-          <li className="py-1">ABOUT</li>
+          <li className="py-1 hover:underline hover:text-red-600">ABOUT</li>
         </NavLink>
         <NavLink to="/contact">
-          <li className="py-1">CONTACT</li>
+          <li className="py-1 hover:underline hover:text-red-600">CONTACT</li>
         </NavLink>
       </ul>
-      
+
 
       {/* User Profile and Hamburger Menu */}
       <div className="flex items-center gap-4">
