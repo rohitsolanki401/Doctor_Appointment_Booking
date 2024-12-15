@@ -81,9 +81,12 @@ const applyFilter = () => {
           {filterDoc.map((item, index) => (
             <div
               key={index}
-              onClick={() => navigate(`/Appointment/${item._id}`)}
+              onClick={() => { navigate(`/Appointment/${item._id}`);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
               className="border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500"
             >
+
               <img className="bg-blue-50" src={item.image} alt="" />
               <div className="p-4">
                 <div className="flex items-center gap-2 text-sm text-center text-green-500">
