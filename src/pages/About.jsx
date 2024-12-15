@@ -22,7 +22,7 @@ const About = () => {
       </div>
 
       {/* --------------------- WHY CHOOSE US ----------------------- */}
-      <div className='text-xl my-4 ml-40 '>
+      <div className='text-xl my-4 ml-40'>
       <p className='text-gray-600 font-semibold'>WHY CHOOSE US</p>
       </div>
     
