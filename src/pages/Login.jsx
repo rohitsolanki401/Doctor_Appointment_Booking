@@ -19,7 +19,7 @@ const Login = () => {
         </p>
         <p>Please {state === 'Sign Up' ? 'sign up' : 'log in'} to book appointment</p>
 
-        {state === 'Sign Up' && (
+        {state === 'Sign Up' && (           // Conditional rendering
           <div className="w-full">
             <p>Full Name</p>
             <input
@@ -31,7 +31,8 @@ const Login = () => {
             />
           </div>
         )}
-
+        
+        {/* --------------- Email Input field -------------------- */}
         <div className="w-full">
           <p>Email</p>
           <input
@@ -42,7 +43,8 @@ const Login = () => {
             required
           />
         </div>
-
+        
+        {/* --------------- Password Input field -------------------- */}
         <div className="w-full">
           <p>Password</p>
           <input

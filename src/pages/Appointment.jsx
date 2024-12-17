@@ -14,14 +14,14 @@ const [docInfo, setDocInfo] = useState(null)
 
 const fetchDocInfo = async () => {
   const docInfo = doctors.find(doc => doc._id === docId);
-  console.log("Doctor found:", docInfo); // Log the doctor details
+  console.log("Doctor found:", docInfo);     // Log the doctor details
   setDocInfo(docInfo);
 };
 
 
 useEffect(() => {
   fetchDocInfo()
-  },[doctors,docId])                         // Dependency Array
+  },[doctors,docId])                         
 
 
   return docInfo && (

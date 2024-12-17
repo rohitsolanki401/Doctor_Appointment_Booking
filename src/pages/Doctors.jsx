@@ -32,7 +32,7 @@ const applyFilter = () => {
       applyFilter();
     }
     setSelectedSpeciality(speciality || '');
-  }, [speciality, doctors]); // Apply filter only when doctors data is available
+  }, [speciality, doctors]);   // Apply filter only when doctors data is available
 
   const specialities = [
     'General physician',
@@ -51,11 +51,14 @@ const applyFilter = () => {
 
       <div className="flex flex-col sm:flex-row items-start gap-5 mt-5">
         
-        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden ${showFilter ? 'bg-primary' : ''}`}  onClick={()=> setShowFilter(prev => !prev)}>Filters</button>
+        <button className={`py-1 px-3 border rounded text-sm transition-all sm:hidden 
+          ${showFilter ? 'bg-primary' : ''}`}  
+          onClick={()=> setShowFilter(prev => !prev)}>Filters</button>
         
 
         {/* ------------ Specialities List --------------- */}
-        <div className={`flex flex-col gap-4 text-sm text-gray-600 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
+        <div className={`flex flex-col gap-4 text-sm text-gray-600 
+          ${showFilter ? 'flex' : 'hidden sm:flex'}`}>
         
         {specialities.map((item) => (
             <p
@@ -64,8 +67,8 @@ const applyFilter = () => {
                 navigate(`/doctors/${item}`);
                 setSelectedSpeciality(item); // Update selected speciality
               }}
-              className={`w-[94w] sm:w-auto pl-3 py-1.5 pr-16 border rounded transition-all cursor-pointer ${
-                selectedSpeciality === item
+              className={`w-[94w] sm:w-auto pl-3 py-1.5 pr-16 border rounded transition-all cursor-pointer 
+                ${ selectedSpeciality === item
                   ? 'bg-primary text-black' // Highlight selected item
                   : 'border-gray-300 hover:bg-primary hover:text-black'
               }`}
@@ -84,7 +87,8 @@ const applyFilter = () => {
               onClick={() => { navigate(`/Appointment/${item._id}`);
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-              className="border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500"
+              className="border border-blue-200 rounded-xl overflow-hidden cursor-pointer 
+              hover:translate-y-[-10px] transition-all duration-500"
             >
 
               <img className="bg-blue-50" src={item.image} alt="" />

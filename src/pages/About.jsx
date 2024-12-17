@@ -4,15 +4,18 @@ import { assets } from '../assets/assets'
 const About = () => {
   return (
     <div>
+
       {/* ------------ ABOUT US ----------------- */}
       
       <div className='text-center text-2xl text-gray-600'>
         <p className=' text-gray-600 pt-10 font-medium'>ABOUT <span>US</span></p>
       </div>
-
+       
+       {/* --------------- About us image ----------------- */}
       <div className='my-10 flex flex-col md:flex-row gap-12 justify-center'>
         <img className='w-full md:max-w-[360px]'  src={assets.about_image} alt=''></img>
         
+        {/* --------------- Description text ----------------- */}
         <div className='flex flex-col gap-6 justify-center md:w-2/4 text-base text-gray-600'>
         <p>Welcome to Wellness Way, your trusted partner in managing your healthcare needs conveniently and efficiently. At Wellness Way, we understand the challenges individuals face when it comes to scheduling doctor appointments and managing their health records.</p>
         <p>Wellness Way is committed to excellence in healthcare technology. We continuously strive to enhance our platform, integrating the latest advancements to improve user experience and deliver superior service. Whether you're booking your first appointment or managing ongoing care, Wellness Way is here to support you every step of the way.</p>

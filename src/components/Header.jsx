@@ -4,13 +4,15 @@ import { assets } from "../assets/assets";
 const Header = () => {
   return (
     <div className="flex flex-col md:flex-row items-center bg-primary rounded-lg px-6 md:px-8 lg:px-16 py-4 md:py-6 mx-4 md:mx-8 lg:mx-12">
+      
       {/* ============== Left Side ==================== */}
       <div className="md:w-1/2 flex flex-col gap-3 items-start">
         <p className="text-2xl md:text-4xl lg:text-5xl text-black font-bold leading-tight">
           Book Appointment <br /> With Trusted Doctors
         </p>
         <div className="flex fllex-col md:flex-row items-center gap-3 text-white text-sm fonrt-light ">
-          {/* Profile Group */}
+          
+          {/*-------------- Profile Group ------------------*/}
           <img
             src={assets.group_profiles}
             alt="Group of doctors"

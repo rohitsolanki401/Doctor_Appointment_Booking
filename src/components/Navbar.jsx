@@ -9,10 +9,6 @@ const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
-  // State to track the active navbar item
-  const [activeItem, setActiveItem] = useState('');
-
-  const navItems = ['Home', 'Doctors', 'About', 'Contact'];
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -39,7 +35,8 @@ const Navbar = () => {
         width="100px"
       />
 
-      {/* Desktop Menu */}
+
+      {/*--------------- Desktop Menu --------------------*/}
       <ul className="hidden md:flex items-start gap-10 font-medium">
         <NavLink to="/">
           <li className="py-1 hover:underline hover:text-red-600">HOME</li>
@@ -56,9 +53,9 @@ const Navbar = () => {
       </ul>
 
 
-      {/* User Profile and Hamburger Menu */}
+      {/*------------- User Profile and Hamburger Menu -------------*/}
       <div className="flex items-center gap-4">
-        {/* Profile Dropdown */}
+        {/*-------------- Profile Dropdown ----------------- */}
         {token && (
           <div
             className={`relative cursor-pointer hidden md:block`} // Hidden on mobile
@@ -109,7 +106,8 @@ const Navbar = () => {
           </div>
         )}
 
-        {/* Hamburger Menu (Mobile Only) */}
+
+        {/*--------------- Hamburger Menu (Mobile Only) ---------------*/}
         <img
           onClick={() => setShowMenu((prev) => !prev)}
           className="w-6 md:hidden cursor-pointer"
@@ -117,7 +115,8 @@ const Navbar = () => {
           alt="menu"
         />
 
-        {/* Mobile Menu */}
+
+        {/* ---------------- Mobile Menu -------------------*/}
         {showMenu && (
           <div className="fixed inset-0 bg-white z-20">
             <div className="flex items-center justify-between px-5 py-6">

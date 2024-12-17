@@ -5,8 +5,10 @@ import { assets } from '../assets/assets';
 const Footer = () => {
   return (
     <div className="bg-white py-10 mt-20 px-12">
-      {/* Main Footer Container */}
+      
+      {/* -------- Main Footer Container -------------*/}
       <div className="flex flex-col md:grid grid-cols-[2fr_1fr_1fr] gap-14 mx-auto md:mx-10 text-sm">
+        
         
         {/* ======================= Left Section ============================= */}
         <div className="flex flex-col items-center md:items-start"> 

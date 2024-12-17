@@ -19,8 +19,11 @@ const MyProfile = () => {
 
   return (
     <div className="max-w-lg flex flex-col gap-2 px-12">
+      
+      {/* -------------- User image ---------------- */}
       <img className="w-36 rounded" src={userData.image} alt="" />
 
+      {/* --------------- Name field -------------------  */}
       {isEdit ? (
         <input
           className="bg-gray-50 text-3xl font-medium max-w-60 mt-4"
@@ -113,6 +116,7 @@ const MyProfile = () => {
       <div>
         <p className="text-neutral-500 underline mt-3">BASIC INFORMATION</p>
         <div className="grid grid-cols-[1fr_3fr] gap-y-4 gap-x-4 mt-3 text-neutral-700 items-center">
+          
           {/* -------------- Gender Field ------------------ */}
 
           <p className="font-medium">Gender:</p>
@@ -151,6 +155,8 @@ const MyProfile = () => {
             </p>
           )}
         </div>
+
+        {/* ------------ Save info and Edit button ---------------- */}
         <div className="mt-6">
           {isEdit ? (
             <button
