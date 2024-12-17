@@ -18,7 +18,7 @@ const { doctors } = useContext(AppContext)
 
          <div key={item._id}     // unique key for each item 
          onClick={() =>{ navigate(`/Appointment/${item._id}`); 
-         window.scrollTo({top: 0 ,behavior: 'smooth'})}} 
+         window.scrollTo(0,0)}} 
          className='border border-blue-200 rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500'>
          
          <img className='bg-blue-50' src={item.image} alt=''></img>
